@@ -5,6 +5,7 @@ const dotenv = require('dotenv').config();
 app.set('view engine', 'pug');
 
 app.get('/', function(req, res) {
+  res.render('index', { title: 'Qui prend quoi ?' });
   res.render('index');
 });
 
