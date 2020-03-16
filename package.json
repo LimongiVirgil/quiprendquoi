@@ -1,0 +1,23 @@
+{
+  "name": "quiprendquoi",
+  "version": "1.0.0",
+  "description": "TP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LimongiVirgil/quiprendquoi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LimongiVirgil/quiprendquoi/issues"
+  },
+  "homepage": "https://github.com/LimongiVirgil/quiprendquoi#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
