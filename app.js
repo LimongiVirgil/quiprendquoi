@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const dotenv = require('dotenv').config();
+
+app.set('view engine', 'pug');
 
 app.get('/', function(req, res) {
-  res.send('Bienvenue à tous');
+  res.render('index');
 });
 
-app.listen(port, () => console.log(`Front app listening on port ${port}!`));
+app.listen(process.env.PORT, () => console.log(`Front app listening on port ${process.env.PORT}!`));
