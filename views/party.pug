@@ -9,15 +9,11 @@ form(method="post" action=`/party/${id}/items`)
   div
     label(for="name") Nom du participant 
     input(name="name" id="name" required minlength="3" placeholder="Nom")
-    <br>
-    label(for="food") Aliment apporté 
-    input(name="food" id="food" required minlength="3" placeholder="Aliment apporté")
   button(type="submit") Ajouté
 ul
   each item in party.items
     form(action=`/party/${id}/items/${item._id}?_method=DELETE` method="post" )
       li #{item.name}
-      li #{item.food}
       button(type="submit") supprimer
 
 
