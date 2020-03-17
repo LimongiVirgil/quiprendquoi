@@ -4,9 +4,9 @@ h2 Evénement: #{party.name}
 h3 Créé par #{party.author}
 label(for="url") Partagez l'événement 
 input(id="url" value=`${url}`)
-form(method="post" action=`/party/${id}/items`)
+form(method="post" action=`/party/${id}/items`).newParty
   <br>
-  div
+  div.newParty__fields
     label(for="name") Nom du participant 
     input(name="name" id="name" required minlength="3" placeholder="Nom")
   button(type="submit") Ajouté

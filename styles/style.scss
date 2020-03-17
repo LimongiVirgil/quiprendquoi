@@ -1,4 +1,6 @@
 @import './vendors/reset.scss';
+@import './config/media.scss';
+@import './blocs/newParty.scss';
 
 body {
   font-family: 'Courier New', Courier, monospace;
