@@ -1,9 +1,28 @@
 @import './vendors/reset.scss';
 
+body {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
 form {
-  border: 1px solid blue;
+  width: 50%;
+  min-width: 300px;
+  margin-bottom: 20px;
 
   div {
-    border: 1px solid red;
+    label {
+      display: block;
+    }
   }
 }
