@@ -17,6 +17,11 @@ h2 {
   margin-bottom: 5px;
 }
 
+h3 {
+  margin-bottom: 20px;
+  color: #000000a1;
+}
+
 form {
   width: 50%;
   min-width: 300px;
@@ -26,5 +31,57 @@ form {
     label {
       display: block;
     }
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  .mainButton, .addButton {
+    margin: unset;
+    background-color: #00912d;
+
+    &:hover {
+      color: #00912d;
+    }
+  }
+
+  .addButton {
+    margin-top: -10px;
+  }
+
+  .deleteButton {
+    margin: unset;
+    background-color: #f11840;
+
+    &:hover {
+      color: #f11840;
+    }
+  }
+}
+
+button {
+  width: 30%;
+  height: 40px;
+  background-color: #3f18d8;
+  color: white;
+  border: none;
+  font-size: 15px;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: block;
+
+  &:hover {
+    color: #3f18d8;
+    background-color: white;
+  }
+
+  &:nth-child(odd) {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }

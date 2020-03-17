@@ -9,12 +9,13 @@ form(method="post" action=`/party/${id}/items`).newParty
   div.newParty__fields
     label(for="name") Nom du participant 
     input(name="name" id="name" required minlength="3" placeholder="Nom")
-  button(type="submit") Ajouté
+  button.addButton(type="submit") Ajouté
 ul
   each item in party.items
     form(action=`/party/${id}/items/${item._id}?_method=DELETE` method="post" )
       li #{item.name}
-      button(type="submit") supprimer
+      button.deleteButton(type="submit") supprimer
+button.fullScreen FullScreen
 
 
       
