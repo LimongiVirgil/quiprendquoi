@@ -3,7 +3,7 @@ h1 Qui prend quoi ?
 h2 Evénement: #{party.name}
 h3 Créé par #{party.author}
 label(for="url") Partagez l'événement 
-input(id="url" value=`${url}` data-clipboard=`${url}`)
+input(id="url" value=`${url}` data-clipboard=`${url}` data-share-url=`${url}` data-share-title=`${party.name}` data-share-text=`${party.author} vous invite a rejoindre l'événement ${party.name}`)
 form(method="post" action=`/party/${id}/items`).newParty
   <br>
   div.newParty__fields

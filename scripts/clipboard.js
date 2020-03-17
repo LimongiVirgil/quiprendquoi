@@ -1,5 +1,4 @@
 if (navigator.clipboard) {
-  document.querySelectorAll('[data-clipboard]')
   document.querySelectorAll('[data-clipboard]').forEach(($clipboardEl) => {
     const $button = document.createElement('button');
     $button.innerHTML = 'Copier';
