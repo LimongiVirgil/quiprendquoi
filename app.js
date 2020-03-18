@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const axios = require('axios');
 
 app.use(express.static('public'));
+app.use(express.static('pwa'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('view engine', 'pug');
