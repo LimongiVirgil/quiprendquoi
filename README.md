@@ -45,7 +45,7 @@ var options = {
 
 `rootMargin` => La marge autour de `root`. Par défaut la margin est de 0.
 
-`threshold` => A quel niveau de l'élément cible la fonction callback doit être appellée. `1.0` = tous les pixels visibles, 0.5 = moitié des pixels visibles. Peut-être un tableau `[0, 0.25, 0.5, 0.75, 1]`.
+`threshold` => A quel niveau de l'élément cible la fonction callback doit être appellée. `1.0` = tous les pixels visibles, `0.5` = moitié des pixels visibles. Peut-être un tableau `[0, 0.25, 0.5, 0.75, 1]`.
 
 - L'élément à observer 
 
