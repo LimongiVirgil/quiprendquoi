@@ -21,7 +21,7 @@ _Pour chaque amélioration, un message type "message de commit" et si pertinent 
 ### Sujet : Intersection Observer web API
 
 Le sujet dont je vais vous parler est la web API Intersection Observer, une web API que j'ai utilisé pour le projet fil rouge.
-Cette web API permet en somme de savoir quand un élément ciblé entre dans le viewport et permet ainsi de déclecher des actions.
+Cette web API permet en somme de savoir quand l'élément ciblé entre dans le viewport et permet ainsi de déclecher des actions.
 
 Pour ce faire, il faut 3 choses:
 
@@ -41,11 +41,11 @@ var options = {
 }
 ```
 
-`root` => L'élément qui est utilisé comme zone d'affichage au moment d'évaluer la visibilité de la cible. Par defaut la valeur est `null`
+`root` => L'élément qui est utilisé comme zone d'affichage au moment d'évaluer la visibilité de la cible. Par défaut la valeur est `null`
 
-`rootMargin` => La marge autour de `root`. Par defaut la margin est de 0.
+`rootMargin` => La marge autour de `root`. Par défaut la margin est de 0.
 
-`threshold` => A quel niveaux de l'élément cible la fonction callback doit être appelé. `1.0` = tous les pixels visible, 0.5 = moitié des pixels visible. Peut etre un tableau `[0, 0.25, 0.5, 0.75, 1]`.
+`threshold` => A quel niveau de l'élément cible la fonction callback doit être appellée. `1.0` = tous les pixels visibles, 0.5 = moitié des pixels visibles. Peut-être un tableau `[0, 0.25, 0.5, 0.75, 1]`.
 
 - L'élément à observer 
 
