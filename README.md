@@ -21,5 +21,19 @@ _Pour chaque amélioration, un message type "message de commit" et si pertinent 
 ### Sujet : Intersection Observer web API
 
 Le sujet dont je vais vous parler est la web API Intersection Observer, une web API que j'ai utilisé pour le projet fil rouge.
-Cette web API permet en somme de savoir quand l'élément cible est dnas le viewport et permet ainsi d'effectuer des actions quand un élément entre dans le viewport. 
+Cette web API permet en somme de savoir quand un élément ciblé entre dans le viewport et permet ainsi de déclecher des actions.
+
+Pour ce faire, il faut 3 choses:
+
+- L'observateur d'intersection
+
+```
+var options = {
+  root: document.querySelector('#scrollArea'),
+  rootMargin: '0px',
+  threshold: 1.0
+}
+
+var observer = new IntersectionObserver(callback, options);
+```
 
