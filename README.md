@@ -28,12 +28,38 @@ Pour ce faire, il faut 3 choses:
 - L'observateur d'intersection
 
 ```
-var options = {
-  root: document.querySelector('#scrollArea'),
-  rootMargin: '0px',
-  threshold: 1.0
-}
-
 var observer = new IntersectionObserver(callback, options);
 ```
 
+la variable `options` étant les options de l'observer:
+
+```
+var options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 1.0
+}
+```
+
+`root` => L'élément qui est utilisé comme zone d'affichage au moment d'évaluer la visibilité de la cible. Par defaut la valeur est `null`
+
+`rootMargin` => La marge autour de `root`. Par defaut la margin est de 0.
+
+`threshold` => A quel niveaux de l'élément cible la fonction callback doit être appelé. `1.0` = tous les pixels visible, 0.5 = moitié des pixels visible. Peut etre un tableau `[0, 0.25, 0.5, 0.75, 1]`.
+
+- L'élément à observer 
+
+```
+var target = document.querySelector('#MaCible');
+observer.observe(target);
+```
+
+- La fonction callback
+
+```
+var callback = function(entries, observer) { 
+  entries.forEach(entry => {
+    // Ici les actions que vous voulez effectuer une fois l'élément cible dans le viewport
+  });
+};
+```
